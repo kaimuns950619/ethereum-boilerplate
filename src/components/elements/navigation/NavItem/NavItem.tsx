@@ -25,6 +25,7 @@ const NavItem: FC<ISubNav> = ({ label, children, href }) => {
               color: linkActiveColor,
             }}
             cursor="pointer"
+			className='custom-navbar'
           >
             {children ? (
               <>
@@ -49,5 +50,10 @@ const NavItem: FC<ISubNav> = ({ label, children, href }) => {
     </Popover>
   );
 };
+<style jsx global>{`
+		.custom-navbar a{
+			color:#696abd;
+		}
+	`}</style> 
 
 export default NavItem;
